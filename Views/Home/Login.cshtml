@@ -1,0 +1,32 @@
+@model BankAccounts.Models.User
+<div class="row">
+    <div class="col">
+        <h1>Login</h1>
+    </div>
+</div>
+<form asp-controller="Home" asp-action="login" method="Post">
+    <div class="row">
+        <div class="col">
+            <span>Email Address</span>
+        </div>
+        <div class="col">
+            <input type="email" name="email"><span asp-validation-for="email"></span>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <span>Password</span>
+        </div>
+        <div class="col">
+            <input type="password" name="password"><span asp-validation-for="password"></span>
+        </div>
+        <div class="col">
+            <a href="/">Need to Register?</a>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <button class="btn-primary" type="submit">Submit</button>
+        </div>
+    </div>
+</form>

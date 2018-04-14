@@ -1,0 +1,10 @@
+C:\Users\Javier Gonzalez\Documents\CodingDojo\Bootcamp\C#\ORM\BankAccounts\bin\Debug\netcoreapp2.0\BankAccounts.deps.json
+C:\Users\Javier Gonzalez\Documents\CodingDojo\Bootcamp\C#\ORM\BankAccounts\bin\Debug\netcoreapp2.0\BankAccounts.runtimeconfig.json
+C:\Users\Javier Gonzalez\Documents\CodingDojo\Bootcamp\C#\ORM\BankAccounts\bin\Debug\netcoreapp2.0\BankAccounts.runtimeconfig.dev.json
+C:\Users\Javier Gonzalez\Documents\CodingDojo\Bootcamp\C#\ORM\BankAccounts\bin\Debug\netcoreapp2.0\BankAccounts.dll
+C:\Users\Javier Gonzalez\Documents\CodingDojo\Bootcamp\C#\ORM\BankAccounts\bin\Debug\netcoreapp2.0\BankAccounts.pdb
+C:\Users\Javier Gonzalez\Documents\CodingDojo\Bootcamp\C#\ORM\BankAccounts\obj\Debug\netcoreapp2.0\BankAccounts.csproj.CoreCompileInputs.cache
+C:\Users\Javier Gonzalez\Documents\CodingDojo\Bootcamp\C#\ORM\BankAccounts\obj\Debug\netcoreapp2.0\BankAccounts.AssemblyInfoInputs.cache
+C:\Users\Javier Gonzalez\Documents\CodingDojo\Bootcamp\C#\ORM\BankAccounts\obj\Debug\netcoreapp2.0\BankAccounts.AssemblyInfo.cs
+C:\Users\Javier Gonzalez\Documents\CodingDojo\Bootcamp\C#\ORM\BankAccounts\obj\Debug\netcoreapp2.0\BankAccounts.dll
+C:\Users\Javier Gonzalez\Documents\CodingDojo\Bootcamp\C#\ORM\BankAccounts\obj\Debug\netcoreapp2.0\BankAccounts.pdb
