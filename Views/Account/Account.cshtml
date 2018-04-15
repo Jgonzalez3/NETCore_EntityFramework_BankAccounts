@@ -27,14 +27,14 @@
 <br>
 
 <div class="container">
-    <table>
+    <table class="table-striped"
         <div class="row">
             <thead>
                 <div>
-                    <th class="col-md-6">Amount</th>
+                    <th class="col-md-4">Amount</th>
                 </div>
                 <div>
-                    <th class="col-md-6">Date</th>
+                    <th class="col-md-4">Date</th>
                 </div>
             </thead>
         </div>
@@ -44,15 +44,15 @@
                 if(@item.transaction < 0)
                 {
                     <tr>
-                        <td class="col-md-6 text-danger">$@item.transaction</td>
-                        <td class="col-md-6">@item.created_at.ToString("MMM dd yyyy")</td>
+                        <td class="col-md-4 text-danger">$@item.transaction</td>
+                        <td class="col-md-4">@item.created_at.ToString("MMM dd yyyy")</td>
                     </tr>
                 }
                 else
                 {
                     <tr>
-                        <td class="col-md-6 text-success">$@item.transaction</td>
-                        <td class="col-md-6">@item.created_at.ToString("MMM dd yyyy")</td>
+                        <td class="col-md-4 text-success">$@item.transaction</td>
+                        <td class="col-md-4">@item.created_at.ToString("MMM dd yyyy")</td>
                     </tr>
                 }
             }
