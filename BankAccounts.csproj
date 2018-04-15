@@ -16,5 +16,6 @@
   <ItemGroup>
     <DotNetCliToolReference Include="Microsoft.DotNet.Watcher.Tools" Version="2.0.1" />
   </ItemGroup>
+  <!-- dotnet add package MySql.Data -v 8.0.9-*     "the code to the left is for adding MySql package to project inorder to connect to MySql DB"--> 
 
 </Project>

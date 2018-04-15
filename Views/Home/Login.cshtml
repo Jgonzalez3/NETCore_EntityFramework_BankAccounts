@@ -4,28 +4,35 @@
         <h1>Login</h1>
     </div>
 </div>
+<p>@TempData["Invalidemail"]</p>
+<p>@TempData["InvalidPW"]</p>
 <form asp-controller="Home" asp-action="login" method="Post">
     <div class="row">
-        <div class="col">
+        <div class="col-sm-2">
             <span>Email Address</span>
         </div>
-        <div class="col">
+        <div class="col-sm-2">
             <input type="email" name="email"><span asp-validation-for="email"></span>
         </div>
     </div>
+    <br>
     <div class="row">
-        <div class="col">
+        <div class="col-sm-2">
             <span>Password</span>
         </div>
-        <div class="col">
+        <div class="col-sm-2">
             <input type="password" name="password"><span asp-validation-for="password"></span>
         </div>
-        <div class="col">
+    </div>
+    <br>
+    <div class="row">
+        <div class="col-sm-4">
             <a href="/">Need to Register?</a>
         </div>
     </div>
+    <br>
     <div class="row">
-        <div class="col">
+        <div class="col-sm-2">
             <button class="btn-primary" type="submit">Submit</button>
         </div>
     </div>

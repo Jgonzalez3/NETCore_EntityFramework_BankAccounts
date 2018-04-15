@@ -33,19 +33,13 @@ namespace BankAccounts.Controllers
         }
         [HttpPost]
         [Route("/register")]
-        public IActionResult Register(RegisterViewModel model){
+        public IActionResult Register(RegisterViewModel model, User NewUser){
             if(ModelState.IsValid){
                 List<User> AllUsers = _context.Users.Include(User=>User.transactions).Where(User=>User.email == model.email).ToList();
                 if(AllUsers.Count > 0){
                     TempData["emailused"] = "Email already in use. Please use another.";
                     return View("Register");
                 }
-                User NewUser = new User{
-                    first_name = model.first_name,
-                    last_name = model.last_name,
-                    email = model.email,
-                    password = model.password,
-                };
                 PasswordHasher<User> Hasher = new PasswordHasher<User>();
                 NewUser.password = Hasher.HashPassword(NewUser, NewUser.password);
                 _context.Users.Add(NewUser);
@@ -61,6 +55,10 @@ namespace BankAccounts.Controllers
         [Route("/login")]
         public IActionResult LoginAttempt(string email, string password){
             User Login = _context.Users.SingleOrDefault(user => user.email == email);
+            if( Login == null){
+                TempData["Invalidemail"] = "Email not Registered. Have you Registered?";
+                return View("Login");
+            }
             if(Login != null && password !=null){
                 var Hasher = new PasswordHasher<User>();
                 if(0 != Hasher.VerifyHashedPassword(Login, Login.password, password)){
@@ -68,6 +66,7 @@ namespace BankAccounts.Controllers
                     return RedirectToAction("DisplayAccount", "Account", new {AccountId=(int)Login.UserId});
                 }
             }
+            TempData["InvalidPW"] = "Invalid Password";
             return View("Login");
         }
         public IActionResult Error()

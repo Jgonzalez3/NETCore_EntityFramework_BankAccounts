@@ -4,50 +4,57 @@
         <h1>Register</h1>
     </div>
 </div>
+<br>
 <form asp-controller="Home" asp-action="register" method="POST">
     <div class="row">
-        <div class="col">
+        <div class="col-sm-2">
             <span>First Name</span>
         </div>
-        <div class="col">
+        <div class="col-sm-2">
             <input type="text" name="first_name"><span asp-validation-for="first_name"></span>
         </div>
     </div>
+    <br>
     <div class="row">
-        <div class="col">
+        <div class="col-sm-2">
             <span>Last Name</span>
         </div>
-        <div class="col">
+        <div class="col-sm-2">
             <input type="text" name="last_name"><span asp-validation-for="last_name"></span>
         </div>
     </div>
+    <br>
     <div class="row">
-        <div class="col">
+        <div class="col-sm-2">
             <span>Email Address</span>
         </div>
-        <div class="col">
+        <div class="col-sm-2">
             <input type="email" name="email"><span asp-validation-for="email">@TempData["emailused"]</span>
         </div>
     </div>
+    <br>
     <div class="row">
-        <div class="col">
+        <div class="col-sm-2">
             <span>Password</span>
         </div>
-        <div class="col">
+        <div class="col-sm-2">
             <input type="password" name="password"><span asp-validation-for="password"></span>
         </div>
     </div>
+    <br>
     <div class="row">
-        <div class="col">
+        <div class="col-sm-2">
             <span>Confirm Password</span>
         </div>
-        <div class="col">
+        <div class="col-sm-2">
             <input type="password" name="confirmpassword"><span asp-validation-for="confirmpassword"></span>
         </div>
-        <div class="col">
+    </div>
+    <br>
+    <div class="col">
             <a href="/login">Already Registered?</a>
         </div>
-    </div>
+    <br>
     <div class="row">
         <div class="col">
             <button class="btn-primary" type="submit">Submit</button>
